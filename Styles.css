@@ -1,0 +1,105 @@
+body {
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.seccion {
+  display: none;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.activa {
+  display: block;
+}
+
+h1, h2, h3 {
+  color: #6A1B9A;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="date"], select {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, select:focus, input[type="date"]:focus {
+  border-color: #6A1B9A;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #6A1B9A;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #4A148C;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-container label {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#detallePedido {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+@media (max-width: 650px) {
+  .seccion {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  input[type="text"], input[type="date"], select {
+    width: 100%;
+  }
+}
