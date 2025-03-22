@@ -9,10 +9,11 @@ body {
     margin: 0;
   
     padding: 0;
-  
-}
 
-  body::before {
+
+}
+/*imagen de fondo */
+body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -27,6 +28,9 @@ body {
   z-index: -1;
 
   }
+  
+
+  
 /* Contenedor principal */
   
 .seccion {
