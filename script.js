@@ -76,7 +76,7 @@ document.getElementById("continuarPago").addEventListener("click", function () {
     }
 });
 
-// Continuar domicilio
+
 document.getElementById("continuarDomicilio").addEventListener("click", function(){
     document.getElementById("domicilio-seccion").classList.remove("activa");
     const metodoPago = document.querySelector('input[name="metodoPago"]:checked').value;
@@ -104,15 +104,14 @@ document.getElementById("finalizarEfectivo").addEventListener("click", function 
     mostrarTicket("Efectivo", montoPago, cambio);
 });
 
-// Finalizar tarjeta
+
 document.getElementById("finalizarTarjeta").addEventListener("click", function () {
     document.getElementById("tarjeta-seccion").classList.remove("activa");
     document.getElementById("ticket-seccion").classList.add("activa");
 
-    mostrarTicket("Tarjeta", totalGlobal, 0); // No hay cambio en tarjeta
+    mostrarTicket("Tarjeta", totalGlobal, 0);
 });
 
-// Función para mostrar ticket (evitamos duplicar código)
 function mostrarTicket(metodoPago, montoPagado, cambio) {
     document.getElementById("ticketResumen").innerHTML = `
         <strong>Nombre:</strong> ${nombreGlobal}<br>
@@ -131,7 +130,6 @@ function mostrarTicket(metodoPago, montoPagado, cambio) {
     `;
 }
 
-// Botón para volver al inicio
 document.getElementById("volver-inicio").addEventListener("click", function () {
     location.reload();
 });
